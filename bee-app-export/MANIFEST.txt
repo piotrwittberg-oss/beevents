@@ -1,0 +1,29 @@
+Bee App - Export Package
+========================
+
+Data eksportu: Sun Nov  2 16:15:05 UTC 2025
+
+Zawartość:
+- App.tsx (główny plik aplikacji)
+- src/ (kod źródłowy)
+  - components/ (komponenty UI)
+  - screens/ (ekrany aplikacji)
+  - navigation/ (nawigacja)
+  - state/ (zarządzanie stanem)
+  - data/ (dane - 200+ kategorii)
+  - types/ (typy TypeScript)
+  - utils/ (narzędzia)
+- package.json (zależności)
+- app.json (konfiguracja Expo)
+- README.md (dokumentacja)
+- INSTALL.md (instrukcja instalacji)
+- START.bat (szybki start - Windows)
+- START.sh (szybki start - Mac/Linux)
+
+Następne kroki:
+1. Przeczytaj INSTALL.md
+2. Uruchom npm install
+3. Uruchom npm start
+4. Testuj w Expo Go
+
+Powodzenia! 🐝

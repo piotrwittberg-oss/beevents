@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Bee",
+    "slug": "bee-events",
+    "scheme": "bee",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#EAB308"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bee.events",
+      "config": {
+        "googleMapsApiKey": "YOUR_IOS_GOOGLE_MAPS_API_KEY_HERE"
+      }
+    },
+    "android": {
+      "edgeToEdgeEnabled": true,
+      "package": "com.bee.events",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "YOUR_ANDROID_GOOGLE_MAPS_API_KEY_HERE"
+        }
+      }
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Bee to use your location to find nearby events."
+        }
+      ]
+    ]
+  }
+}
