@@ -39,7 +39,15 @@
         {
           "locationAlwaysAndWhenInUsePermission": "Allow Bee to use your location to find nearby events."
         }
-      ]
+      ],
+      "expo-asset",
+      "expo-build-properties",
+      "expo-font",
+      "expo-mail-composer",
+      "expo-secure-store",
+      "expo-sqlite",
+      "expo-video",
+      "expo-web-browser"
     ]
   }
 }
