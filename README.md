@@ -156,6 +156,9 @@ The app is already set up and running. All dependencies are installed.
 - **Android**: Configured with Google Maps API key
 - **iOS**: Maps not configured (user preference)
 
+### Recent Fixes
+- **2025-11-05**: Removed `@react-native-menu/menu` library due to Kotlin compilation error in Android builds
+
 ### Usage
 
 1. **Create an Account**: Register with email or use social login
