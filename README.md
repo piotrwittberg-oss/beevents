@@ -152,6 +152,10 @@ src/
 
 The app is already set up and running. All dependencies are installed.
 
+### Google Maps Configuration
+- **Android**: Configured with Google Maps API key
+- **iOS**: Maps not configured (user preference)
+
 ### Usage
 
 1. **Create an Account**: Register with email or use social login
