@@ -22,8 +22,16 @@
       "package": "com.bee.events",
       "permissions": [
         "ACCESS_COARSE_LOCATION",
-        "ACCESS_FINE_LOCATION"
+        "ACCESS_FINE_LOCATION",
+        "CAMERA",
+        "RECORD_AUDIO",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
       ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#EAB308"
+      },
       "config": {
         "googleMaps": {
           "apiKey": "AIzaSyCX8_ubwG0EvhE3xEb4W_0pdXHQC69UPYA"
@@ -31,20 +39,9 @@
       }
     },
     "plugins": [
-      [
-        "expo-location",
-        {
-          "locationAlwaysAndWhenInUsePermission": "Allow Bee to use your location to find nearby events."
-        }
-      ],
       "expo-asset",
-      "expo-build-properties",
       "expo-font",
-      "expo-mail-composer",
-      "expo-secure-store",
-      "expo-sqlite",
-      "expo-video",
-      "expo-web-browser"
+      "expo-secure-store"
     ]
   }
 }
