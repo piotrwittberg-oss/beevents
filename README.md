@@ -150,7 +150,47 @@ src/
 
 ### Installation
 
-The app is already set up and running. All dependencies are installed.
+```bash
+# Clone repository
+git clone https://github.com/piotrwittberg-oss/beevents.git
+cd beevents
+
+# Install dependencies
+bun install
+
+# Start development server
+bun start
+```
+
+## 📦 Getting Build Links (APK Download)
+
+This project uses **GitHub Actions with EAS Build** to automatically create downloadable APK files.
+
+### Setup (One-time):
+
+1. **Create Expo Account**: https://expo.dev
+2. **Generate Expo Token**:
+   - Go to https://expo.dev/accounts/[your-username]/settings/access-tokens
+   - Create new token
+3. **Add to GitHub Secrets**:
+   - Go to: https://github.com/piotrwittberg-oss/beevents/settings/secrets/actions
+   - Click "New repository secret"
+   - Name: `EXPO_TOKEN`
+   - Value: [paste your expo token]
+
+### Build App:
+
+**Option 1: Automatic** - Push to main branch triggers build automatically
+
+**Option 2: Manual** - Go to Actions tab on GitHub and run "EAS Build" workflow manually
+
+### Download APK:
+
+After build completes (10-15 minutes):
+1. Go to https://expo.dev
+2. Find your project
+3. Click on latest build
+4. Download APK and share the link!
 
 ### Google Maps Configuration
 - **Android**: Configured with Google Maps API key
