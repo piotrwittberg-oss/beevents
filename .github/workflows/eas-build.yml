@@ -33,8 +33,14 @@ jobs:
       - name: Install dependencies
         run: bun install
 
+      - name: Initialize EAS project
+        run: |
+          if ! grep -q "projectId" app.json; then
+            eas init --force --non-interactive
+          fi
+
       - name: Build Android APK
-        run: eas build --platform android --profile preview --auto-submit=false
+        run: eas build --platform android --profile preview --non-interactive --no-wait
 
       - name: Comment PR with build link
         if: github.event_name == 'push'
