@@ -34,7 +34,7 @@ jobs:
         run: bun install
 
       - name: Build Android APK
-        run: eas build --platform android --profile preview --non-interactive --no-wait
+        run: eas build --platform android --profile preview --auto-submit=false
 
       - name: Comment PR with build link
         if: github.event_name == 'push'
